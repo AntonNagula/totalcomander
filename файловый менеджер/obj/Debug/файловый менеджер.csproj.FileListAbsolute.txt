@@ -1,0 +1,40 @@
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe.config
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\bin\Debug\файловый менеджер.pdb
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csprojResolveAssemblyReference.cache
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Form1.resources
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Properties.Resources.resources
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.GenerateResource.Cache
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.CoreCompileInputs.cache
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\obj\Debug\файловый менеджер.exe
+D:\User\Desktop\visual studio\с#\дз с#\дз 11\файловый менеджер\obj\Debug\файловый менеджер.pdb
+G:\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe.config
+G:\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe
+G:\дз 11\файловый менеджер\bin\Debug\файловый менеджер.pdb
+G:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csprojResolveAssemblyReference.cache
+G:\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Form1.resources
+G:\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Properties.Resources.resources
+G:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.GenerateResource.Cache
+G:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.CoreCompileInputs.cache
+G:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.exe
+G:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.pdb
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe.config
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\bin\Debug\файловый менеджер.pdb
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csprojResolveAssemblyReference.cache
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Form1.resources
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Properties.Resources.resources
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.GenerateResource.Cache
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.CoreCompileInputs.cache
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\obj\Debug\файловый менеджер.exe
+D:\User\Desktop\visual studio\с#\дз с#\дз 11.3\дз 11\файловый менеджер\obj\Debug\файловый менеджер.pdb
+H:\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe.config
+H:\дз 11\файловый менеджер\bin\Debug\файловый менеджер.exe
+H:\дз 11\файловый менеджер\bin\Debug\файловый менеджер.pdb
+H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csprojAssemblyReference.cache
+H:\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Form1.resources
+H:\дз 11\файловый менеджер\obj\Debug\файловый_менеджер.Properties.Resources.resources
+H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.GenerateResource.cache
+H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.CoreCompileInputs.cache
+H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.exe
+H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.pdb
