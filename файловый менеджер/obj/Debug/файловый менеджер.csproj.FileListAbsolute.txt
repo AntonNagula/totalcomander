@@ -38,3 +38,13 @@ H:\дз 11\файловый менеджер\obj\Debug\файловый мене
 H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.csproj.CoreCompileInputs.cache
 H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.exe
 H:\дз 11\файловый менеджер\obj\Debug\файловый менеджер.pdb
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\bin\Debug\файловый менеджер.exe.config
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\bin\Debug\файловый менеджер.exe
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\bin\Debug\файловый менеджер.pdb
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\obj\Debug\файловый менеджер.csprojAssemblyReference.cache
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\obj\Debug\файловый_менеджер.Form1.resources
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\obj\Debug\файловый_менеджер.Properties.Resources.resources
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\obj\Debug\файловый менеджер.csproj.GenerateResource.cache
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\obj\Debug\файловый менеджер.csproj.CoreCompileInputs.cache
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\obj\Debug\файловый менеджер.exe
+C:\Users\Banderos\Desktop\всрпп\лаб 1\файловый менеджер\obj\Debug\файловый менеджер.pdb

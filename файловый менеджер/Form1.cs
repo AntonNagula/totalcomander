@@ -23,7 +23,7 @@ namespace файловый_менеджер
             way1.Text = "C:\\";
             way2.Text = "C:\\";
         }
-        internal ImageList ImageList1;
+
         private void GetDrive()
         {
             InitializeComponent();
@@ -42,24 +42,43 @@ namespace файловый_менеджер
             comboBox2.Text = "Сортировка";
             comboBox1.Items.AddRange(str2);
             comboBox2.Items.AddRange(str2);
-        }       
+        }  
         
+        private void Show1(DirectoryInfo dir)
+        {
+            DirectoryInfo[] dirs = dir.GetDirectories();
+            foreach (DirectoryInfo m in dirs)
+            {
+                List1.Items.Add(m);
+            }
+            FileInfo[] files = dir.GetFiles();
+            foreach (FileInfo m in files)
+            {
+                List1.Items.Add(m);
+            }
+        }
+
+        private void Show2(DirectoryInfo dir)
+        {
+            DirectoryInfo[] dirs = dir.GetDirectories();
+            foreach (DirectoryInfo m in dirs)
+            {
+                List2.Items.Add(m);
+            }
+            FileInfo[] files = dir.GetFiles();
+            foreach (FileInfo m in files)
+            {
+                List2.Items.Add(m);
+            }
+        }
+
         public void Drivers1_SetText()
         {
             if (Drivers1.Text.Length == 0)
             {
                 this.Drivers1.Text = "choose in window 1";
                 DirectoryInfo dir = new DirectoryInfo("C:\\");
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List1.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List1.Items.Add(m);
-                }
+                Show1(dir);
             }
         }
 
@@ -69,16 +88,7 @@ namespace файловый_менеджер
             {
                 this.Drivers2.Text = "choose dir window 2";
                 DirectoryInfo dir = new DirectoryInfo("C:\\");
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List2.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List2.Items.Add(m);
-                }
+                Show2(dir);
             }
         }
 
@@ -89,6 +99,7 @@ namespace файловый_менеджер
         bool size1, size2, date1, date2;
         List<string> hronic1 = new List<string>() { "C:\\" }, hronic2 = new List<string>() { "C:\\" };
         int count1=0, count2=0;
+
         private void delete1_Click(object sender, EventArgs e)
         {
             
@@ -101,16 +112,7 @@ namespace файловый_менеджер
                     Directory.Delete(way, true);
                 List1.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List1.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List1.Items.Add(m);
-                }
+                Show1(dir);
             }
             catch(Exception mes)
             {
@@ -130,16 +132,7 @@ namespace файловый_менеджер
                     Directory.Delete(way, true);
                 List2.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way2.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List2.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List2.Items.Add(m);
-                }
+                Show2(dir);
             }
             catch (Exception mes)
             {
@@ -238,29 +231,11 @@ namespace файловый_менеджер
                     File.Move(done, way);
                     List2.Items.Clear();
                     DirectoryInfo direct = new DirectoryInfo(way2.Text);
-                    DirectoryInfo[] dires = direct.GetDirectories();
-                    foreach (DirectoryInfo m in dires)
-                    {
-                        List2.Items.Add(m);
-                    }
-                    FileInfo[] fils = direct.GetFiles();
-                    foreach (FileInfo m in fils)
-                    {
-                        List2.Items.Add(m);
-                    }
+                    Show2(direct);
                 }
                 List1.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List1.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List1.Items.Add(m);
-                }
+                Show1(dir);
             }
             catch (Exception mes)
             {
@@ -295,29 +270,11 @@ namespace файловый_менеджер
                     File.Move(done, way);
                     List1.Items.Clear();
                     DirectoryInfo direct = new DirectoryInfo(way1.Text);
-                    DirectoryInfo[] dires = direct.GetDirectories();
-                    foreach (DirectoryInfo m in dires)
-                    {
-                        List1.Items.Add(m);
-                    }
-                    FileInfo[] fils = direct.GetFiles();
-                    foreach (FileInfo m in fils)
-                    {
-                        List1.Items.Add(m);
-                    }
+                    Show1(direct);
                 }
                 List2.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way2.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List2.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List2.Items.Add(m);
-                }
+                Show2(dir);
             }
             catch (Exception mes)
             {
@@ -338,16 +295,7 @@ namespace файловый_менеджер
                 count2++;
                 List2.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(selectedState);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List2.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List2.Items.Add(m);
-                }
+                Show2(dir);
             }
             catch (Exception name)
             {
@@ -365,16 +313,7 @@ namespace файловый_менеджер
                 count1++;
                 List1.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(selectedState);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List1.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List1.Items.Add(m);
-                }
+                Show1(dir);
             }
             catch(Exception name)
             {
@@ -401,16 +340,7 @@ namespace файловый_менеджер
                 hronic1.Add(way1.Text);
                 List1.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List1.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List1.Items.Add(m);
-                }                
+                Show1(dir);               
             }
             else
             {
@@ -440,16 +370,7 @@ namespace файловый_менеджер
                 }
                 List1.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List1.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List1.Items.Add(m);
-                }
+                Show1(dir);
             }
         }
         
@@ -474,16 +395,7 @@ namespace файловый_менеджер
                 hronic2.Add(way2.Text);
                 List2.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way2.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List2.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List2.Items.Add(m);
-                }
+                Show2(dir);
             }
             else
             {
@@ -508,16 +420,7 @@ namespace файловый_менеджер
                 }
                 List2.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way2.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List2.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List2.Items.Add(m);
-                }
+                Show2(dir);
             }
         }
         private void way2_TextChanged(object sender, EventArgs e)
@@ -748,16 +651,7 @@ namespace файловый_менеджер
                 way1.Text = hronic1[count1];
                 List1.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way1.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List1.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List1.Items.Add(m);
-                }
+                Show1(dir);
             }
         }
         //
@@ -769,16 +663,7 @@ namespace файловый_менеджер
                 way2.Text = hronic2[count2];
                 List2.Items.Clear();
                 DirectoryInfo dir = new DirectoryInfo(way2.Text);
-                DirectoryInfo[] dirs = dir.GetDirectories();
-                foreach (DirectoryInfo m in dirs)
-                {
-                    List2.Items.Add(m);
-                }
-                FileInfo[] files = dir.GetFiles();
-                foreach (FileInfo m in files)
-                {
-                    List2.Items.Add(m);
-                }
+                Show2(dir);
             }
         }
 
@@ -798,16 +683,7 @@ namespace файловый_менеджер
             Compress(sourcefile,fail);
             List1.Items.Clear();
             DirectoryInfo dir = new DirectoryInfo(way1.Text);
-            DirectoryInfo[] dirs = dir.GetDirectories();
-            foreach (DirectoryInfo m in dirs)
-            {
-                List1.Items.Add(m);
-            }
-            FileInfo[] files = dir.GetFiles();
-            foreach (FileInfo m in files)
-            {
-                List1.Items.Add(m);
-            }
+            Show1(dir);
         }
 
         private void Compress2_Click(object sender, EventArgs e)
@@ -826,16 +702,7 @@ namespace файловый_менеджер
             Compress(sourcefile, fail);
             List2.Items.Clear();
             DirectoryInfo dir = new DirectoryInfo(way2.Text);
-            DirectoryInfo[] dirs = dir.GetDirectories();
-            foreach (DirectoryInfo m in dirs)
-            {
-                List2.Items.Add(m);
-            }
-            FileInfo[] files = dir.GetFiles();
-            foreach (FileInfo m in files)
-            {
-                List2.Items.Add(m);
-            }
+            Show2(dir);
         }
         public static void Compress(string sourceFile, string compressedFile)
         {            
